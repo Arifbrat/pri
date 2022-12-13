@@ -8,11 +8,11 @@ MAINTAINER Ahmet Acikgoz <NaytSeyd@yandex.com>
 ENV TZ=Europe/Istanbul
 
 # Çalışma dizini
-ENV PATH="/root/sedenuser/bin:$PATH"
-WORKDIR /root/sedenuser
+ENV PATH="/root/pri/bin:$PATH"
+WORKDIR /root/pri
 
 # Repoyu klonla
-RUN git clone -b seden https://github.com/TeamDerUntergang/Telegram-UserBot /root/sedenuser
+RUN git clone -b seden https://github.com/Arifbrat/pri /root/sedenuser
 
 # Oturum ve yapılandırmayı kopyala (varsa)
 COPY ./sample_config.env ./sedenbot.session* ./config.env* /root/sedenuser/
